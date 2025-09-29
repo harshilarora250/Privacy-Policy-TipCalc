@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Tip Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateX(0) translateY(0); }
+            100% { transform: translateX(-100px) translateY(-100px); }
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 3rem;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.1);
+        }
+
+        .section h2 {
+            color: #007bff;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section h3 {
+            color: #495057;
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .section ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, rgba(0, 123, 255, 0.1) 0%, rgba(0, 123, 255, 0.05) 100%);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 123, 255, 0.2);
+            margin: 1rem 0;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .contact-info h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background: #f8f9fa;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .last-updated {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                border-radius: 15px;
+            }
+
+            .header {
+                padding: 2rem 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+            }
+
+            .section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Privacy Policy</h1>
+            <p>Tip Calculator App</p>
+        </div>
+
+        <div class="content">
+            <div class="last-updated">
+                <strong>Last Updated:</strong> September 28, 2025
+            </div>
+
+            <div class="section">
+                <h2>
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    Overview
+                </h2>
+                <p>
+                    This Privacy Policy describes how the Tip Calculator app ("we," "our," or "us") collects, uses, and protects your information when you use our mobile application (the "Service").
+                </p>
+                <div class="highlight">
+                    <strong>Key Point:</strong> Our Tip Calculator app is designed with privacy in mind. We do not collect, store, or transmit any personal information or calculation data.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                    </svg>
+                    Information We Do NOT Collect
+                </h2>
+                <p>Our Tip Calculator app is designed to operate entirely on your device without collecting any personal information. Specifically, we do not collect:</p>
+                <ul>
+                    <li><strong>Personal Information:</strong> Names, email addresses, phone numbers, or any identifying information</li>
+                    <li><strong>Calculation Data:</strong> Bill amounts, tip percentages, or splitting information you enter</li>
+                    <li><strong>Usage Analytics:</strong> How you use the app, frequency of use, or feature preferences</li>
+                    <li><strong>Device Information:</strong> Device identifiers, IP addresses, or location data</li>
+                    <li><strong>Financial Information:</strong> No payment methods, credit card information, or financial data</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                    </svg>
+                    How the App Works
+                </h2>
+                <p>The Tip Calculator app operates entirely offline on your device:</p>
+                <ul>
+                    <li>All calculations are performed locally on your device</li>
+                    <li>No data is sent to external servers</li>
+                    <li>No internet connection is required for the app to function</li>
+                    <li>All entered information is temporary and not saved between app sessions</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                    </svg>
+                    Data Security
+                </h2>
+                <p>Since we don't collect any data, there are no data security concerns related to our servers or databases. However, we ensure:</p>
+                <ul>
+                    <li>The app operates in a secure, sandboxed environment on your device</li>
+                    <li>No sensitive information is transmitted or stored</li>
+                    <li>Regular security updates through app store updates</li>
+                    <li>Adherence to mobile platform security guidelines</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    Third-Party Services
+                </h2>
+                <p>Our app does not integrate with any third-party services, analytics platforms, or advertising networks. This includes:</p>
+                <ul>
+                    <li>No Google Analytics or similar tracking services</li>
+                    <li>No social media integrations</li>
+                    <li>No advertising networks or ad tracking</li>
+                    <li>No cloud storage or backup services</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M14.12 4l1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"/>
+                    </svg>
+                    Children's Privacy
+                </h2>
+                <p>Our app is safe for users of all ages, including children under 13. Since we don't collect any personal information, there are no special privacy concerns for younger users. Parents can feel confident that their children's privacy is protected when using our Tip Calculator app.</p>
+            </div>
+
+            <div class="section">
+                <h2>
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                    </svg>
+                    Changes to This Privacy Policy
+                </h2>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by:</p>
+                <ul>
+                    <li>Posting the new Privacy Policy on this page</li>
+                    <li>Updating the "Last Updated" date at the top of this policy</li>
+                    <li>Providing an in-app notification for significant changes</li>
+                </ul>
+                <p>You are advised to review this Privacy Policy periodically for any changes.</p>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy or our app, please contact us:</p>
+                <p><strong>Email:</strong> privacy@tipcalculator.app</p>
+                <p><strong>Response Time:</strong> Within 48 hours</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Tip Calculator App. All rights reserved.</p>
+            <p>This privacy policy is effective as of September 28, 2025</p>
+        </div>
+    </div>
+</body>
+</html>
